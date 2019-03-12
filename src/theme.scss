@@ -1,0 +1,25 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$primary: mat-palette($mat-amber);
+$accent:  mat-palette($mat-blue);
+$warn:    mat-palette($mat-red);
+$theme: mat-light-theme($primary, $accent, $warn);
+$background: map-get($theme, background);
+$foreground: map-get($theme, foreground);
+$success: mat-palette($mat-light-green);
+$alert: mat-palette($mat-lime);
+$empty: mat-palette($mat-grey);
+
+@mixin min-field-width {
+  min-width: 275px;
+}
+
+$break-xs: 599px;
+$break-sm: 959px;
+$break-md: 1279px;
+$break-lg: 1919px;
+$side-nav-width: 260px;
+$color-link: #3c8dbc;
+
+@include angular-material-theme($theme);
