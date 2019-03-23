@@ -1,1 +1,21 @@
-Soy Card List Component
+<mat-card>
+  <mat-card-title>Soy Card List Component</mat-card-title>
+
+  <mat-card-content>
+    <h1> Mis cartas</h1>
+
+    <mat-list>
+      <mat-list-item> Carta 1 </mat-list-item>
+      <mat-list-item> Carta 2 </mat-list-item>
+      <mat-list-item> Carta 3 </mat-list-item>
+      <mat-list-item> Carta 4 </mat-list-item>
+      <mat-list-item> Carta 5 </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="warn" (click)="cancelarLista()">Cancelar</button>
+    <button mat-raised-button color="accent" (click)="aceptarLista()">Aceptar</button>
+  </mat-card-actions>
+
+</mat-card>

@@ -9,4 +9,16 @@ import { Component, OnInit } from '@angular/core';
 export class CardFiltersComponent implements OnInit {
   constructor() { }
   ngOnInit() { }
+
+  buttonAccent() {
+    console.log('accent clicked')
+  }
+
+  buttonPrimary() {
+    console.log('primary clicked')
+  }
+
+  buttonWarn() {
+    console.log('warn clicked')
+  }
 }

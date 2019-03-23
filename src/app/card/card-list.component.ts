@@ -9,4 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class CardListComponent implements OnInit {
   constructor() { }
   ngOnInit() { }
+
+  aceptarLista() {
+    console.log('aceptada')
+  }
+
+  cancelarLista() {
+    console.log('cancelada')
+  }
 }
