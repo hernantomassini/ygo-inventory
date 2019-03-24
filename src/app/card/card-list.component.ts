@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-card-list',
@@ -7,14 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class CardListComponent implements OnInit {
+  @Input() cards: any[]
+
+  @Output() onAccept = new EventEmitter<void>()
+  @Output() onCancel = new EventEmitter<void>()
+
   constructor() { }
-  ngOnInit() { }
+
+  ngOnInit() {}
 
   aceptarLista() {
-    console.log('aceptada')
+    this.onAccept.emit()
   }
 
   cancelarLista() {
-    console.log('cancelada')
+    this.onCancel.emit()
   }
 }

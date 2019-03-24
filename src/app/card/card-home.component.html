@@ -1,3 +1,8 @@
-<app-card-filters></app-card-filters>
+<app-card-filters>
+</app-card-filters>
 
-<app-card-list></app-card-list>
+<app-card-list
+  [cards]="cards"
+  (onAccept)="seAceptoEnCardList()"
+  (onCancel)="seCanceloEnCardList()">
+</app-card-list>

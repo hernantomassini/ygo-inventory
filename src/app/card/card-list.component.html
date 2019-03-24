@@ -5,11 +5,14 @@
     <h1> Mis cartas</h1>
 
     <mat-list>
-      <mat-list-item> Carta 1 </mat-list-item>
-      <mat-list-item> Carta 2 </mat-list-item>
-      <mat-list-item> Carta 3 </mat-list-item>
-      <mat-list-item> Carta 4 </mat-list-item>
-      <mat-list-item> Carta 5 </mat-list-item>
+      <div *ngFor="let card of cards" style="margin-bottom: 25px">
+        <p>Nombre: {{ card.name }}</p>
+        <p>Atk: {{ card.atk }}</p>
+        <p>Def: {{ card.def }}</p>
+        <p>Lvl: {{ card.lvl }}</p>
+        <mat-divider></mat-divider>
+      </div>
+
     </mat-list>
   </mat-card-content>
 
